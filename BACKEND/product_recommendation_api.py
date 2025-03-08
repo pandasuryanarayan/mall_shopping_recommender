@@ -201,4 +201,5 @@ def recommend_season_products(season, offset=0, limit=8):
     return paginated_products.to_dict(orient='records')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 8000))
+    app.run(host="0.0.0.0", port=port)
