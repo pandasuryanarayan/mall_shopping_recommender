@@ -4,6 +4,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel
 from flask_cors import CORS
 import json
+import os
 
 app = Flask(__name__)
 CORS(app)
