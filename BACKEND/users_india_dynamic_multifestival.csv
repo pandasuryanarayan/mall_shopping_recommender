@@ -1,0 +1,201 @@
+CustomerID,Gender,Age,Annual Income (Lakh INR),Spending Score (1-100),Preferred Categories,Favorite Brands,Festivals,Seasons
+1,Male,19,15.1,32,"['Handicrafts', 'Traditional Clothing']",['Godrej'],['Eid'],"['Autumn', 'Monsoon']"
+2,Male,19,2.8,30,['Grocery'],['Godrej'],"['Ganesh Chaturthi', 'Diwali']",['Winter']
+3,Female,55,6.3,1,"['Traditional Clothing', 'Footwear']","['H&M India', 'Flipkart']",['Diwali'],"['Autumn', 'Monsoon']"
+4,Male,23,8.2,46,"['Personal Care', 'Cricket Gear', 'Herbal Cosmetics']",['Amul'],"['Raksha Bandhan', 'Diwali', 'Baisakhi']",['Autumn']
+5,Female,23,11.5,81,"['Personal Care', 'Ayurvedic Beauty', 'Traditional Clothing']",['Reliance'],"['Holi', 'Diwali', 'Navratri']",['Monsoon']
+6,Female,23,17.3,13,"['Cricket Gear', 'Books', 'Electronics', 'Home Appliances']","[""Spencer's""]","['Eid', 'Holi']",['Monsoon']
+7,Female,62,18.8,83,['Personal Care'],"['Amazon India', 'Godrej', 'Bata']",['Diwali'],"['Summer', 'Monsoon']"
+8,Female,35,19.8,82,"['Electronics', 'Home Appliances']",['Bata'],['Christmas'],"['Winter', 'Monsoon']"
+9,Female,35,2.3,73,"['Ayurvedic Beauty', 'Electronics', 'Books']","['Amul', 'Flipkart']","['Ganesh Chaturthi', 'Diwali']",['Monsoon']
+10,Male,65,11.7,34,"['Jewelry', 'Personal Care', 'Footwear', 'Home Appliances']",['Flipkart'],"['Diwali', 'Onam', 'Baisakhi']","['Autumn', 'Summer']"
+11,Male,21,17.4,20,"['Herbal Cosmetics', 'Electronics']","['FabIndia', 'DMart']","['Diwali', 'Raksha Bandhan']","['Summer', 'Winter']"
+12,Female,53,17.4,2,['Electronics'],"['H&M India', 'Big Bazaar', 'boAt']","['Navratri', 'Diwali']","['Autumn', 'Summer']"
+13,Male,47,1.1,93,"['Grocery', 'Herbal Cosmetics', 'Handicrafts']","['boAt', ""Levi's India"", 'Asian Paints']","['Raksha Bandhan', 'Holi', 'Navratri']",['Monsoon']
+14,Male,41,15.5,70,['Personal Care'],"['ITC', 'Tata']",['Diwali'],"['Autumn', 'Monsoon']"
+15,Female,33,2.1,73,['Ethnic Wear'],"['ITC', 'FabIndia', 'Flipkart']",['Pongal'],"['Monsoon', 'Autumn']"
+16,Male,34,11,78,"['Ayurvedic Beauty', 'Grocery', 'Herbal Cosmetics', 'Traditional Clothing']","['Raymond', ""Levi's India"", 'DMart']","['Diwali', 'Navratri', 'Eid']","['Autumn', 'Summer']"
+17,Female,51,9.6,32,"['Ethnic Wear', 'Home Appliances']",['Marico'],"['Holi', 'Navratri', 'Diwali']",['Autumn']
+18,Male,18,2.3,81,['Ayurvedic Beauty'],['Reliance'],"['Diwali', 'Baisakhi']",['Autumn']
+19,Male,35,13.7,28,"['Traditional Clothing', 'Personal Care']","['ITC', 'Bata', 'Marico']","['Diwali', 'Pongal']",['Monsoon']
+20,Male,24,13.5,46,"['Footwear', 'Books', 'Traditional Clothing', 'Mobile Accessories']","['boAt', 'Reliance', 'DMart']","['Raksha Bandhan', 'Christmas', 'Diwali']","['Summer', 'Winter']"
+21,Male,33,4.6,69,"['Handicrafts', 'Footwear', 'Jewelry', 'Cricket Gear']","['Bata', 'FabIndia']","['Pongal', 'Ganesh Chaturthi']",['Summer']
+22,Male,59,20,2,['Jewelry'],['Amazon India'],"['Diwali', 'Holi']","['Summer', 'Monsoon']"
+23,Female,31,17.4,8,"['Footwear', 'Mobile Accessories']","['H&M India', 'Amul']","['Ganesh Chaturthi', 'Pongal']","['Summer', 'Winter']"
+24,Female,27,4.6,28,['Personal Care'],"['Godrej', 'Reliance', 'Big Bazaar']",['Raksha Bandhan'],['Autumn']
+25,Female,50,18.5,68,"['Mobile Accessories', 'Grocery']",['Amazon India'],['Ganesh Chaturthi'],['Autumn']
+26,Male,43,3.3,73,"['Personal Care', 'Jewelry']",['FabIndia'],"['Navratri', 'Eid']","['Winter', 'Summer']"
+27,Female,31,13.7,41,"['Cricket Gear', 'Footwear']","[""Levi's India""]","['Ganesh Chaturthi', 'Holi']","['Monsoon', 'Autumn']"
+28,Male,18,9.7,73,['Ethnic Wear'],"['Raymond', 'Asian Paints', 'H&M India']",['Holi'],"['Summer', 'Autumn']"
+29,Male,33,8,21,"['Home Decor', 'Grocery', 'Traditional Clothing', 'Cricket Gear']","['Asian Paints', 'Tata', ""Levi's India""]","['Holi', 'Diwali', 'Navratri']",['Autumn']
+30,Male,34,3.2,14,"['Cricket Gear', 'Jewelry']","['Raymond', 'Big Bazaar', 'Marico']","['Christmas', 'Ganesh Chaturthi', 'Pongal']","['Autumn', 'Winter']"
+31,Female,34,18.2,7,['Electronics'],"['H&M India', 'Reliance']",['Pongal'],"['Monsoon', 'Autumn']"
+32,Male,58,19.6,21,"['Grocery', 'Traditional Clothing', 'Footwear', 'Jewelry']",['boAt'],['Pongal'],['Summer']
+33,Male,41,12.1,19,"['Handicrafts', 'Mobile Accessories', 'Cricket Gear', 'Home Appliances']","[""Spencer's""]",['Diwali'],['Winter']
+34,Male,40,15.8,53,"['Jewelry', 'Ayurvedic Beauty']",['Amazon India'],"['Eid', 'Christmas']",['Autumn']
+35,Male,65,18.6,53,"['Cricket Gear', 'Handicrafts']","['boAt', 'DMart', 'Reliance']","['Diwali', 'Navratri']",['Summer']
+36,Male,47,7.6,30,"['Mobile Accessories', 'Electronics']",['DMart'],"['Holi', 'Diwali']","['Summer', 'Autumn']"
+37,Male,35,7.7,66,"['Electronics', 'Home Decor', 'Grocery', 'Home Appliances']",['boAt'],"['Holi', 'Navratri']",['Monsoon']
+38,Female,20,3.1,56,"['Traditional Clothing', 'Herbal Cosmetics', 'Home Appliances']","['Asian Paints', 'boAt']","['Eid', 'Baisakhi']",['Autumn']
+39,Female,20,14.5,1,"['Home Appliances', 'Footwear']",['Big Bazaar'],"['Holi', 'Navratri', 'Eid']","['Winter', 'Monsoon']"
+40,Male,64,18.1,65,"['Electronics', 'Footwear', 'Home Appliances']","[""Levi's India"", 'Godrej']",['Navratri'],['Winter']
+41,Female,60,18.9,87,"['Personal Care', 'Jewelry']","['DMart', 'Godrej']",['Holi'],"['Autumn', 'Winter']"
+42,Female,31,9.2,75,"['Books', 'Jewelry', 'Home Decor']","['Raymond', 'Asian Paints', 'ITC']","['Diwali', 'Navratri', 'Baisakhi']",['Winter']
+43,Male,36,10.8,82,"['Ethnic Wear', 'Home Decor', 'Herbal Cosmetics']","[""Levi's India""]",['Raksha Bandhan'],['Autumn']
+44,Male,19,1.9,61,['Books'],"['Marico', 'Raymond']","['Holi', 'Raksha Bandhan', 'Eid']","['Monsoon', 'Summer']"
+45,Female,43,5.6,84,['Jewelry'],['Parle'],['Diwali'],['Autumn']
+46,Female,21,11.6,16,"['Handicrafts', 'Herbal Cosmetics', 'Books', 'Electronics']","['Godrej', 'Big Bazaar', 'Amul']","['Holi', 'Diwali', 'Raksha Bandhan']","['Monsoon', 'Winter']"
+47,Female,28,15.1,61,"['Cricket Gear', 'Herbal Cosmetics', 'Ayurvedic Beauty', 'Electronics']","['Asian Paints', 'ITC']","['Navratri', 'Holi', 'Ganesh Chaturthi']",['Winter']
+48,Female,46,2.5,37,"['Cricket Gear', 'Home Appliances']","['Godrej', 'FabIndia']",['Raksha Bandhan'],['Summer']
+49,Male,42,14.2,91,"['Ethnic Wear', 'Footwear']","['Big Bazaar', 'Godrej']","['Onam', 'Diwali']","['Summer', 'Winter']"
+50,Male,31,16.8,50,['Home Decor'],"['DMart', 'ITC', 'Tata']","['Onam', 'Pongal']","['Summer', 'Monsoon']"
+51,Female,44,11.2,95,"['Books', 'Ayurvedic Beauty']","['Parle', 'ITC']",['Christmas'],"['Monsoon', 'Winter']"
+52,Female,60,13.9,52,"['Home Decor', 'Books']",['Godrej'],['Diwali'],"['Autumn', 'Summer']"
+53,Male,23,13.2,18,"['Handicrafts', 'Mobile Accessories', 'Cricket Gear', 'Footwear']","['Raymond', 'Amul']","['Holi', 'Christmas']","['Autumn', 'Monsoon']"
+54,Female,35,15.3,54,"['Home Decor', 'Ethnic Wear', 'Books']",['Godrej'],['Ganesh Chaturthi'],"['Winter', 'Autumn']"
+55,Male,59,2.3,84,['Herbal Cosmetics'],['Bata'],['Ganesh Chaturthi'],['Winter']
+56,Male,33,3.4,86,['Personal Care'],['Amul'],"['Diwali', 'Raksha Bandhan', 'Holi']","['Monsoon', 'Summer']"
+57,Female,28,12.5,96,['Herbal Cosmetics'],"[""Levi's India""]",['Holi'],['Monsoon']
+58,Female,54,13.9,49,"['Traditional Clothing', 'Ayurvedic Beauty', 'Ethnic Wear', 'Personal Care']","['Bata', 'boAt', ""Levi's India""]","['Holi', 'Raksha Bandhan', 'Ganesh Chaturthi']",['Autumn']
+59,Male,40,11.1,85,"['Ethnic Wear', 'Grocery', 'Electronics']","['Tata', 'Parle']","['Raksha Bandhan', 'Ganesh Chaturthi']",['Winter']
+60,Female,41,13.1,59,"['Footwear', 'Handicrafts']","['Asian Paints', 'H&M India', 'ITC']","['Eid', 'Holi']","['Winter', 'Autumn']"
+61,Female,38,17.2,12,"['Jewelry', 'Books', 'Ayurvedic Beauty']","['Marico', 'DMart']","['Eid', 'Pongal']",['Monsoon']
+62,Female,38,4.5,28,"['Herbal Cosmetics', 'Cricket Gear', 'Home Appliances']","['H&M India', 'Godrej']",['Christmas'],['Monsoon']
+63,Male,33,14.7,63,"['Traditional Clothing', 'Books']","['ITC', 'Amul', 'Tata']",['Ganesh Chaturthi'],"['Summer', 'Winter']"
+64,Male,43,14.1,40,"['Books', 'Grocery', 'Home Decor']","['Parle', 'Godrej']","['Raksha Bandhan', 'Holi']","['Winter', 'Monsoon']"
+65,Female,35,6.8,30,['Traditional Clothing'],['Big Bazaar'],['Diwali'],['Autumn']
+66,Male,31,15,36,"['Ethnic Wear', 'Home Decor', 'Ayurvedic Beauty']","['Bata', ""Spencer's""]",['Baisakhi'],"['Autumn', 'Summer']"
+67,Male,63,11.1,36,['Mobile Accessories'],"[""Levi's India"", 'Flipkart', 'ITC']",['Diwali'],['Autumn']
+68,Female,48,10.1,44,"['Mobile Accessories', 'Cricket Gear']","['boAt', 'FabIndia']","['Eid', 'Baisakhi']","['Autumn', 'Winter']"
+69,Male,54,13,7,"['Handicrafts', 'Herbal Cosmetics']","[""Levi's India"", 'FabIndia', 'Bata']",['Eid'],"['Autumn', 'Summer']"
+70,Male,51,8.2,57,"['Home Decor', 'Personal Care', 'Footwear']","['Marico', 'Reliance']","['Diwali', 'Ganesh Chaturthi', 'Onam']",['Monsoon']
+71,Male,58,5,85,['Handicrafts'],['Amazon India'],"['Ganesh Chaturthi', 'Diwali', 'Baisakhi']",['Winter']
+72,Male,18,8.8,89,"['Cricket Gear', 'Mobile Accessories', 'Ayurvedic Beauty', 'Jewelry']","[""Levi's India"", 'Amul', 'FabIndia']","['Navratri', 'Pongal', 'Raksha Bandhan']",['Monsoon']
+73,Female,58,12.2,26,"['Ethnic Wear', 'Grocery', 'Ayurvedic Beauty', 'Electronics']",['H&M India'],['Raksha Bandhan'],['Summer']
+74,Male,28,16.1,77,"['Books', 'Ethnic Wear', 'Jewelry']","[""Levi's India"", 'DMart', 'H&M India']","['Holi', 'Christmas', 'Onam']","['Autumn', 'Monsoon']"
+75,Female,23,12.4,56,"['Personal Care', 'Cricket Gear', 'Mobile Accessories']",['Bata'],"['Navratri', 'Christmas', 'Ganesh Chaturthi']",['Monsoon']
+76,Female,54,1.8,97,"['Books', 'Grocery']","['Amul', 'H&M India', 'Amazon India']","['Christmas', 'Pongal', 'Holi']","['Summer', 'Winter']"
+77,Female,23,9.9,53,"['Home Appliances', 'Electronics', 'Ethnic Wear']",['Big Bazaar'],"['Ganesh Chaturthi', 'Diwali']","['Summer', 'Monsoon']"
+78,Female,60,19,98,['Books'],['Big Bazaar'],"['Holi', 'Ganesh Chaturthi']","['Winter', 'Autumn']"
+79,Male,43,17.4,1,"['Footwear', 'Mobile Accessories', 'Ayurvedic Beauty', 'Grocery']","['ITC', 'Amul']",['Eid'],['Winter']
+80,Female,53,3.5,37,"['Jewelry', 'Traditional Clothing', 'Books', 'Ethnic Wear']",['Bata'],"['Navratri', 'Christmas', 'Holi']",['Monsoon']
+81,Female,53,1.3,53,['Ayurvedic Beauty'],['Amul'],['Diwali'],['Winter']
+82,Female,63,6.5,91,"['Footwear', 'Home Decor', 'Books']","['Bata', 'Amul']","['Navratri', 'Ganesh Chaturthi', 'Christmas']",['Autumn']
+83,Female,30,18.5,66,"['Home Decor', 'Ethnic Wear']","['Parle', 'Big Bazaar']","['Navratri', 'Holi', 'Christmas']","['Summer', 'Winter']"
+84,Male,36,14.8,76,"['Home Decor', 'Handicrafts', 'Books', 'Grocery']","[""Spencer's"", 'Big Bazaar']","['Diwali', 'Baisakhi', 'Christmas']","['Monsoon', 'Summer']"
+85,Female,38,17.5,90,"['Personal Care', 'Footwear']",['Parle'],['Diwali'],"['Winter', 'Summer']"
+86,Female,63,18.4,49,"['Electronics', 'Herbal Cosmetics', 'Jewelry', 'Handicrafts']","['Reliance', 'Flipkart']","['Navratri', 'Raksha Bandhan', 'Holi']","['Autumn', 'Monsoon']"
+87,Male,46,2.9,59,['Traditional Clothing'],['Parle'],"['Ganesh Chaturthi', 'Eid', 'Diwali']",['Summer']
+88,Male,48,15.8,34,"['Personal Care', 'Traditional Clothing', 'Footwear']","['FabIndia', 'Big Bazaar', 'DMart']","['Christmas', 'Diwali']","['Winter', 'Summer']"
+89,Male,57,2.3,81,"['Ayurvedic Beauty', 'Traditional Clothing', 'Ethnic Wear']","['boAt', 'Marico']","['Pongal', 'Raksha Bandhan']",['Summer']
+90,Female,19,1.9,8,"['Home Appliances', 'Jewelry', 'Footwear']",['Bata'],"['Diwali', 'Navratri', 'Holi']","['Summer', 'Monsoon']"
+91,Male,28,4.3,79,"['Personal Care', 'Electronics', 'Ayurvedic Beauty', 'Books']","['Flipkart', 'Bata', 'Amul']","['Ganesh Chaturthi', 'Diwali', 'Eid']","['Monsoon', 'Autumn']"
+92,Female,34,13.7,60,"['Electronics', 'Grocery', 'Handicrafts']",['Amul'],"['Raksha Bandhan', 'Diwali']","['Winter', 'Monsoon']"
+93,Female,62,5.8,39,"['Footwear', 'Home Decor']","['boAt', 'Bata']","['Diwali', 'Ganesh Chaturthi']","['Autumn', 'Monsoon']"
+94,Female,62,6.6,85,"['Cricket Gear', 'Mobile Accessories', 'Personal Care', 'Electronics']","['Reliance', 'ITC', ""Levi's India""]",['Eid'],"['Monsoon', 'Summer']"
+95,Male,58,4.6,33,"['Electronics', 'Ethnic Wear']","['Reliance', ""Levi's India"", 'Amul']",['Navratri'],"['Autumn', 'Summer']"
+96,Male,23,18.3,42,"['Handicrafts', 'Ayurvedic Beauty', 'Jewelry', 'Grocery']","['Asian Paints', 'Marico']","['Baisakhi', 'Onam']",['Winter']
+97,Female,48,19.4,38,"['Herbal Cosmetics', 'Ethnic Wear', 'Books']",['Flipkart'],['Diwali'],"['Winter', 'Summer']"
+98,Female,23,16,2,"['Grocery', 'Ethnic Wear', 'Books']","['H&M India', 'DMart']","['Raksha Bandhan', 'Diwali', 'Holi']","['Autumn', 'Winter']"
+99,Male,61,5.4,4,"['Jewelry', 'Personal Care', 'Ayurvedic Beauty']","['FabIndia', 'Amul', ""Levi's India""]","['Christmas', 'Holi', 'Diwali']","['Monsoon', 'Autumn']"
+100,Male,26,1.9,5,"['Books', 'Ethnic Wear', 'Home Decor']",['Godrej'],['Raksha Bandhan'],"['Autumn', 'Summer']"
+101,Female,41,13.7,96,"['Personal Care', 'Traditional Clothing', 'Home Decor', 'Handicrafts']","['boAt', 'ITC']","['Diwali', 'Christmas', 'Baisakhi']","['Summer', 'Autumn']"
+102,Female,20,14.1,28,"['Books', 'Ayurvedic Beauty', 'Home Appliances', 'Ethnic Wear']","[""Spencer's"", 'Godrej', 'Marico']",['Holi'],"['Autumn', 'Summer']"
+103,Female,30,19.4,59,['Electronics'],['Tata'],['Christmas'],"['Autumn', 'Winter']"
+104,Male,26,16,27,['Home Decor'],"['Raymond', 'Marico', 'Bata']","['Onam', 'Navratri']",['Autumn']
+105,Male,35,17.3,19,"['Grocery', 'Cricket Gear']",['boAt'],"['Holi', 'Pongal', 'Eid']",['Winter']
+106,Male,18,7.8,31,"['Mobile Accessories', 'Handicrafts', 'Cricket Gear']",['Flipkart'],"['Onam', 'Diwali', 'Holi']","['Autumn', 'Summer']"
+107,Male,65,2.2,58,"['Grocery', 'Personal Care', 'Ethnic Wear']","['Asian Paints', 'Bata']","['Ganesh Chaturthi', 'Eid', 'Holi']",['Summer']
+108,Female,47,13.2,4,['Books'],"['Parle', 'boAt']","['Raksha Bandhan', 'Christmas']","['Autumn', 'Winter']"
+109,Male,23,7.1,19,['Handicrafts'],"['Marico', 'Godrej']","['Navratri', 'Diwali', 'Ganesh Chaturthi']","['Autumn', 'Summer']"
+110,Female,56,11.1,59,"['Ethnic Wear', 'Herbal Cosmetics', 'Traditional Clothing', 'Jewelry']","['Godrej', 'Raymond', 'Parle']","['Diwali', 'Christmas']",['Monsoon']
+111,Female,39,16.7,52,"['Traditional Clothing', 'Ethnic Wear', 'Home Appliances', 'Footwear']","['H&M India', ""Spencer's""]",['Diwali'],"['Winter', 'Monsoon']"
+112,Male,23,16.8,12,"['Ethnic Wear', 'Traditional Clothing', 'Home Decor', 'Home Appliances']",['Godrej'],['Diwali'],"['Autumn', 'Monsoon']"
+113,Male,44,7.7,86,"['Home Decor', 'Traditional Clothing', 'Mobile Accessories', 'Cricket Gear']","[""Levi's India"", ""Spencer's"", 'boAt']","['Diwali', 'Baisakhi', 'Navratri']",['Summer']
+114,Male,60,10.2,14,"['Home Decor', 'Grocery', 'Home Appliances']",['H&M India'],"['Christmas', 'Onam', 'Baisakhi']",['Autumn']
+115,Female,53,19.5,80,['Personal Care'],"['H&M India', 'Tata', 'Amazon India']","['Eid', 'Diwali']","['Autumn', 'Monsoon']"
+116,Female,40,1.1,19,"['Ethnic Wear', 'Handicrafts', 'Traditional Clothing', 'Electronics']",['FabIndia'],"['Eid', 'Onam', 'Diwali']",['Summer']
+117,Female,44,9.6,21,"['Cricket Gear', 'Traditional Clothing', 'Home Appliances']","['FabIndia', 'Reliance', 'Flipkart']",['Diwali'],['Summer']
+118,Male,35,9.4,55,"['Personal Care', 'Books', 'Footwear', 'Cricket Gear']",['Asian Paints'],['Diwali'],"['Winter', 'Monsoon']"
+119,Female,25,6.4,87,"['Grocery', 'Electronics', 'Cricket Gear', 'Mobile Accessories']",['DMart'],"['Raksha Bandhan', 'Ganesh Chaturthi', 'Baisakhi']",['Summer']
+120,Male,31,6.7,28,"['Herbal Cosmetics', 'Cricket Gear']","['Big Bazaar', 'boAt']",['Holi'],"['Autumn', 'Winter']"
+121,Female,29,3.5,69,"['Grocery', 'Jewelry']","[""Spencer's"", 'FabIndia', 'DMart']","['Baisakhi', 'Diwali', 'Holi']",['Autumn']
+122,Female,19,9.7,10,"['Personal Care', 'Footwear', 'Jewelry']","['Parle', ""Levi's India""]",['Navratri'],"['Autumn', 'Winter']"
+123,Male,38,4.3,80,"['Home Decor', 'Traditional Clothing', 'Home Appliances', 'Ethnic Wear']","['boAt', 'Bata']","['Ganesh Chaturthi', 'Baisakhi']","['Monsoon', 'Autumn']"
+124,Male,43,17.5,96,"['Ayurvedic Beauty', 'Home Appliances', 'Herbal Cosmetics']",['FabIndia'],"['Navratri', 'Ganesh Chaturthi', 'Onam']",['Winter']
+125,Male,40,7.7,83,"['Ayurvedic Beauty', 'Ethnic Wear']",['H&M India'],['Holi'],['Autumn']
+126,Male,59,2.4,99,"['Books', 'Herbal Cosmetics', 'Personal Care', 'Home Decor']","['Marico', 'Big Bazaar']","['Pongal', 'Navratri', 'Ganesh Chaturthi']","['Summer', 'Winter']"
+127,Male,46,2.3,57,"['Herbal Cosmetics', 'Cricket Gear', 'Personal Care']","[""Spencer's""]","['Navratri', 'Eid', 'Ganesh Chaturthi']",['Winter']
+128,Female,47,9.6,8,"['Home Decor', 'Cricket Gear', 'Ethnic Wear']","['FabIndia', 'Asian Paints', 'DMart']","['Baisakhi', 'Raksha Bandhan']",['Monsoon']
+129,Female,54,13.4,42,"['Grocery', 'Handicrafts', 'Mobile Accessories', 'Books']",['Big Bazaar'],"['Holi', 'Christmas', 'Raksha Bandhan']",['Winter']
+130,Male,20,5.7,57,"['Grocery', 'Jewelry', 'Personal Care', 'Handicrafts']","[""Spencer's"", ""Levi's India""]","['Onam', 'Christmas']","['Autumn', 'Monsoon']"
+131,Female,61,12.4,81,"['Ethnic Wear', 'Home Appliances', 'Jewelry']","['DMart', ""Levi's India"", 'H&M India']","['Ganesh Chaturthi', 'Eid', 'Onam']",['Autumn']
+132,Female,23,12.1,19,"['Cricket Gear', 'Electronics', 'Traditional Clothing']","['DMart', 'Flipkart', 'FabIndia']","['Diwali', 'Navratri']","['Autumn', 'Winter']"
+133,Female,26,13.7,95,['Electronics'],"['Parle', 'Asian Paints', ""Spencer's""]",['Ganesh Chaturthi'],"['Summer', 'Autumn']"
+134,Female,29,19.1,44,"['Ayurvedic Beauty', 'Jewelry', 'Handicrafts', 'Herbal Cosmetics']","[""Levi's India""]",['Christmas'],['Autumn']
+135,Female,57,3.5,49,"['Handicrafts', 'Jewelry']","['Amazon India', 'Amul', 'Reliance']","['Navratri', 'Eid']","['Summer', 'Winter']"
+136,Male,46,12.6,97,"['Ayurvedic Beauty', 'Grocery', 'Jewelry', 'Cricket Gear']","['Raymond', ""Spencer's""]","['Pongal', 'Christmas', 'Baisakhi']","['Autumn', 'Monsoon']"
+137,Female,36,15.8,65,"['Handicrafts', 'Home Decor', 'Ayurvedic Beauty', 'Personal Care']",['H&M India'],['Christmas'],"['Autumn', 'Winter']"
+138,Female,53,18.8,92,['Cricket Gear'],['Amazon India'],"['Navratri', 'Diwali']","['Autumn', 'Monsoon']"
+139,Male,45,2.7,29,"['Jewelry', 'Home Appliances', 'Mobile Accessories', 'Footwear']",['DMart'],"['Holi', 'Raksha Bandhan', 'Ganesh Chaturthi']","['Summer', 'Winter']"
+140,Male,42,19.9,48,"['Mobile Accessories', 'Home Appliances']",['Big Bazaar'],['Raksha Bandhan'],['Monsoon']
+141,Male,36,18.4,61,"['Herbal Cosmetics', 'Traditional Clothing']","['Amul', 'Tata']",['Christmas'],['Monsoon']
+142,Female,31,16.9,71,"['Ethnic Wear', 'Herbal Cosmetics', 'Cricket Gear', 'Ayurvedic Beauty']","['boAt', 'Reliance']",['Pongal'],"['Monsoon', 'Autumn']"
+143,Female,22,3.1,64,['Electronics'],"['Marico', 'Bata', 'Flipkart']","['Eid', 'Diwali']","['Winter', 'Autumn']"
+144,Male,57,7.7,74,"['Handicrafts', 'Electronics', 'Home Decor', 'Ethnic Wear']","[""Spencer's"", 'FabIndia', 'Asian Paints']","['Ganesh Chaturthi', 'Raksha Bandhan', 'Holi']",['Winter']
+145,Female,48,1.8,50,"['Cricket Gear', 'Traditional Clothing', 'Mobile Accessories']","['FabIndia', ""Spencer's""]",['Diwali'],['Summer']
+146,Female,26,1.8,70,"['Home Decor', 'Electronics', 'Handicrafts']","['Amul', 'ITC', 'Amazon India']",['Ganesh Chaturthi'],['Summer']
+147,Female,20,6.6,6,"['Jewelry', 'Mobile Accessories']","[""Levi's India"", 'Asian Paints']","['Eid', 'Onam']","['Summer', 'Monsoon']"
+148,Female,20,15.3,25,"['Home Appliances', 'Home Decor', 'Herbal Cosmetics']",['Big Bazaar'],"['Christmas', 'Eid']",['Monsoon']
+149,Female,45,17.9,96,"['Jewelry', 'Footwear', 'Home Appliances', 'Handicrafts']","['ITC', ""Spencer's""]","['Pongal', 'Onam', 'Diwali']","['Autumn', 'Summer']"
+150,Male,64,9.1,56,"['Grocery', 'Cricket Gear']","['boAt', 'FabIndia']","['Holi', 'Navratri']","['Autumn', 'Summer']"
+151,Female,46,12.4,55,"['Traditional Clothing', 'Books']","['Amul', 'Reliance']","['Holi', 'Ganesh Chaturthi', 'Diwali']","['Winter', 'Summer']"
+152,Female,35,13.1,8,['Electronics'],"['DMart', ""Spencer's"", 'Asian Paints']","['Diwali', 'Ganesh Chaturthi', 'Eid']",['Autumn']
+153,Male,27,17.1,87,"['Mobile Accessories', 'Handicrafts', 'Ethnic Wear', 'Ayurvedic Beauty']","[""Spencer's"", 'Marico', 'DMart']","['Navratri', 'Raksha Bandhan', 'Diwali']",['Winter']
+154,Male,61,9.5,48,"['Books', 'Herbal Cosmetics', 'Ethnic Wear']","['Flipkart', 'Asian Paints', ""Spencer's""]","['Diwali', 'Eid']","['Winter', 'Summer']"
+155,Female,33,19.2,4,"['Books', 'Grocery']","['Godrej', 'boAt']","['Navratri', 'Holi']","['Summer', 'Monsoon']"
+156,Female,31,19.9,37,"['Ayurvedic Beauty', 'Ethnic Wear', 'Handicrafts', 'Home Decor']","['Amazon India', 'Amul']",['Raksha Bandhan'],"['Winter', 'Autumn']"
+157,Female,63,2.2,70,"['Jewelry', 'Cricket Gear', 'Handicrafts']","['Amazon India', ""Spencer's"", 'Asian Paints']",['Ganesh Chaturthi'],['Winter']
+158,Male,26,5.5,64,['Home Appliances'],"['Marico', ""Spencer's"", 'Amul']","['Pongal', 'Onam', 'Diwali']",['Summer']
+159,Male,22,6.9,92,"['Grocery', 'Footwear', 'Herbal Cosmetics', 'Home Decor']","['FabIndia', 'Flipkart', 'Big Bazaar']","['Christmas', 'Raksha Bandhan', 'Diwali']",['Winter']
+160,Female,47,13.9,45,"['Jewelry', 'Home Decor']","['Marico', 'Amazon India', 'Flipkart']","['Eid', 'Navratri']",['Monsoon']
+161,Male,51,3.9,22,"['Home Appliances', 'Traditional Clothing']","[""Spencer's""]","['Eid', 'Navratri', 'Raksha Bandhan']","['Winter', 'Summer']"
+162,Male,34,4.7,71,"['Handicrafts', 'Electronics', 'Cricket Gear']","['Godrej', 'FabIndia', 'Asian Paints']","['Raksha Bandhan', 'Pongal', 'Navratri']",['Monsoon']
+163,Male,28,13.5,93,"['Home Decor', 'Personal Care', 'Mobile Accessories']",['FabIndia'],['Diwali'],"['Summer', 'Monsoon']"
+164,Male,54,8.9,82,['Books'],"['Godrej', ""Levi's India"", 'Marico']","['Holi', 'Navratri']",['Winter']
+165,Female,37,9.6,89,['Handicrafts'],"['Parle', 'ITC']","['Holi', 'Eid']",['Winter']
+166,Female,56,3.7,92,"['Traditional Clothing', 'Home Decor', 'Home Appliances']","['Flipkart', ""Spencer's""]","['Pongal', 'Ganesh Chaturthi', 'Raksha Bandhan']",['Autumn']
+167,Female,33,9.9,35,"['Ayurvedic Beauty', 'Handicrafts', 'Ethnic Wear', 'Mobile Accessories']","['DMart', 'Parle']",['Navratri'],['Winter']
+168,Female,54,14.7,25,"['Books', 'Grocery']","['ITC', ""Levi's India""]","['Navratri', 'Ganesh Chaturthi']",['Monsoon']
+169,Male,43,10.6,31,"['Personal Care', 'Home Appliances']",['Reliance'],"['Eid', 'Diwali']","['Summer', 'Monsoon']"
+170,Female,36,11.2,14,"['Handicrafts', 'Cricket Gear', 'Traditional Clothing', 'Home Appliances']","[""Spencer's"", 'Reliance']","['Ganesh Chaturthi', 'Eid']",['Autumn']
+171,Male,41,11.5,10,"['Grocery', 'Books', 'Herbal Cosmetics', 'Jewelry']","['boAt', 'Flipkart']",['Ganesh Chaturthi'],"['Winter', 'Summer']"
+172,Female,39,11.6,47,"['Ayurvedic Beauty', 'Personal Care']","['DMart', 'Asian Paints', 'Reliance']",['Holi'],['Winter']
+173,Male,63,7.3,61,"['Handicrafts', 'Personal Care', 'Grocery', 'Jewelry']","['Big Bazaar', 'Amazon India']","['Diwali', 'Holi']","['Winter', 'Autumn']"
+174,Female,50,16.7,69,"['Traditional Clothing', 'Personal Care', 'Cricket Gear', 'Books']","[""Spencer's""]","['Diwali', 'Navratri']",['Summer']
+175,Female,55,6.8,93,['Personal Care'],"['H&M India', 'Bata']","['Baisakhi', 'Diwali', 'Eid']",['Autumn']
+176,Female,28,11,93,"['Handicrafts', 'Home Decor', 'Electronics', 'Ayurvedic Beauty']",['Marico'],"['Pongal', 'Christmas', 'Holi']",['Winter']
+177,Male,19,9.4,54,"['Footwear', 'Traditional Clothing']",['Parle'],"['Raksha Bandhan', 'Onam', 'Ganesh Chaturthi']","['Monsoon', 'Summer']"
+178,Male,63,3.6,27,"['Electronics', 'Books', 'Grocery']","['Big Bazaar', 'Amazon India']","['Christmas', 'Diwali']","['Summer', 'Monsoon']"
+179,Female,61,15.7,93,"['Personal Care', 'Books', 'Ayurvedic Beauty']",['H&M India'],"['Holi', 'Diwali', 'Ganesh Chaturthi']","['Summer', 'Monsoon']"
+180,Male,37,15.7,91,"['Traditional Clothing', 'Jewelry']","['Big Bazaar', 'ITC']","['Diwali', 'Navratri']","['Monsoon', 'Winter']"
+181,Female,25,11.9,70,"['Jewelry', 'Footwear', 'Home Appliances', 'Handicrafts']","['Reliance', ""Levi's India""]","['Holi', 'Diwali', 'Baisakhi']",['Summer']
+182,Female,46,13.5,96,"['Ayurvedic Beauty', 'Jewelry', 'Grocery', 'Cricket Gear']","['H&M India', 'Flipkart', 'boAt']","['Christmas', 'Holi', 'Raksha Bandhan']",['Autumn']
+183,Male,21,13.7,68,"['Electronics', 'Ayurvedic Beauty']",['boAt'],"['Ganesh Chaturthi', 'Navratri']","['Summer', 'Autumn']"
+184,Female,24,13.9,18,['Grocery'],['Parle'],"['Christmas', 'Baisakhi', 'Diwali']","['Monsoon', 'Autumn']"
+185,Female,59,4.8,37,"['Cricket Gear', 'Electronics', 'Mobile Accessories']",['Marico'],['Diwali'],['Winter']
+186,Male,44,17.8,23,['Home Decor'],"['ITC', 'Amazon India']","['Raksha Bandhan', 'Ganesh Chaturthi', 'Christmas']","['Winter', 'Autumn']"
+187,Male,18,6.7,78,['Jewelry'],"[""Levi's India"", 'Amul']","['Holi', 'Diwali', 'Pongal']","['Monsoon', 'Summer']"
+188,Male,50,9.9,25,['Home Appliances'],['Amul'],"['Pongal', 'Eid', 'Christmas']","['Summer', 'Monsoon']"
+189,Male,18,15,38,"['Handicrafts', 'Personal Care']","['DMart', 'Parle', 'Asian Paints']","['Holi', 'Raksha Bandhan']",['Monsoon']
+190,Female,60,2.8,18,"['Home Appliances', 'Ayurvedic Beauty', 'Mobile Accessories', 'Cricket Gear']","['Bata', 'Amul']","['Holi', 'Pongal']","['Summer', 'Monsoon']"
+191,Female,55,14.7,2,"['Electronics', 'Home Appliances', 'Traditional Clothing']",['Reliance'],"['Onam', 'Ganesh Chaturthi', 'Diwali']",['Autumn']
+192,Female,37,4,88,"['Traditional Clothing', 'Ethnic Wear', 'Electronics']","[""Spencer's"", 'Bata']",['Ganesh Chaturthi'],['Summer']
+193,Female,27,9.6,78,"['Footwear', 'Traditional Clothing', 'Grocery']","['Godrej', 'Raymond']",['Diwali'],['Autumn']
+194,Female,51,14.4,10,['Mobile Accessories'],"['Asian Paints', 'Raymond', 'Flipkart']",['Ganesh Chaturthi'],"['Monsoon', 'Autumn']"
+195,Female,25,13.9,92,"['Ethnic Wear', 'Grocery', 'Books', 'Mobile Accessories']","['Flipkart', 'Asian Paints']","['Christmas', 'Diwali']","['Summer', 'Winter']"
+196,Male,53,9.8,40,['Footwear'],"['Tata', 'Raymond']","['Raksha Bandhan', 'Diwali', 'Ganesh Chaturthi']",['Autumn']
+197,Male,45,7.5,9,['Jewelry'],['ITC'],['Pongal'],"['Summer', 'Autumn']"
+198,Female,29,15.6,99,"['Home Appliances', 'Footwear', 'Books', 'Home Decor']","['FabIndia', 'Godrej']",['Diwali'],"['Autumn', 'Winter']"
+199,Male,29,19.9,51,"['Traditional Clothing', 'Ayurvedic Beauty']",['Tata'],"['Eid', 'Christmas']","['Winter', 'Autumn']"
+200,Female,52,8.2,30,"['Books', 'Home Appliances']",['H&M India'],['Raksha Bandhan'],['Monsoon']
