@@ -39,7 +39,7 @@ const MainPage = () => {
   // Fetch user login status on mount
   useEffect(() => {
     axios
-      .get("http://0.0.0.0:10000/check-login")
+      .get("http://127.0.0.1:5000/check-login") // http://127.0.0.1:5000/
       .then((response) => {
         if (response.data.logged_in) {
           setUserId(response.data.userId);
@@ -62,7 +62,7 @@ const MainPage = () => {
       // Runs only when userId is set
       setLoadingProducts(true);
       axios
-        .get("http://0.0.0.0:10000/user-recommendations")
+        .get("http://127.0.0.1:5000/user-recommendations")
         .then((response) => {
           setProducts(response.data);
           setDisplayedProducts(response.data);
@@ -82,7 +82,7 @@ const MainPage = () => {
     if (loginChecked && !userId) {
       setLoadingProducts(true);
       axios
-        .get(`http://0.0.0.0:10000/season-recommendations?season=${season}`, {
+        .get(`http://127.0.0.1:5000/season-recommendations?season=${season}`, {
         })
         .then((response) => {
           setProducts(response.data);
@@ -102,7 +102,7 @@ const MainPage = () => {
   const loadMoreProducts = () => {
     setLoadMore(true);
     axios
-      .get(`http://0.0.0.0:10000/season-recommendations`, {
+      .get(`http://127.0.0.1:5000/season-recommendations`, {
         params: { season: season, offset: index + 8, limit: 4 },
       })
       .then((response) => {
@@ -125,7 +125,7 @@ const MainPage = () => {
   const loadMoreProductsLoggedIn = () => {
     setLoadMore(true);
     axios
-      .get("http://0.0.0.0:10000/user-recommendations", {
+      .get("http://127.0.0.1:5000/user-recommendations", {
         params: { num_recommendations: 4, offset: index }, // Include an offset
       })
       .then((response) => {
@@ -180,7 +180,7 @@ const MainPage = () => {
 
   const handleLogout = () => {
     axios
-      .post("http://0.0.0.0:10000/logout")
+      .post("http://127.0.0.1:5000/logout")
       .then((response) => {
         if (response.data.success) {
           setUserId(null); // Clear the user ID in the frontend state

@@ -33,7 +33,7 @@ const ProductDetailsDialog = ({ selectedProduct, onClose }) => {
       setLoadingRecommendations(true);
       axios
         .get(
-          `http://0.0.0.0:10000/recommend?product_id=${currentProduct.ProductID}`,
+          `http://127.0.0.1:5000/recommend?product_id=${currentProduct.ProductID}`,
           { timeout : 120000 }
         )
         .then((response) => {
