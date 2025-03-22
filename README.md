@@ -8,7 +8,6 @@ This project is a Mall Shopping Recommender website that provides product recomm
 - Implements a price range filter
 - Provides user-based recommendations after login
 - Offers seasonal recommendations for non-logged-in users
-- Uses `Grid2` for a responsive and modern UI
 
 ## Logo
 The logo for this project is an SVG representation of a shopping bag with a recommendation checkmark, placed on a yellow circular background for better visibility.
