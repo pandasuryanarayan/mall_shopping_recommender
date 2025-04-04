@@ -10,7 +10,7 @@ import {
   Box,
   Menu,
   MenuItem,
-  Select,
+  Chip,
 } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import CheckIcon from "@mui/icons-material/Check";
@@ -62,7 +62,9 @@ const MainPage = () => {
       // Runs only when userId is set
       setLoadingProducts(true);
       axios
-        .get("http://127.0.0.1:5000/user-recommendations")
+        .get("http://127.0.0.1:5000/user-recommendations", {
+          params: { season: season }, // Include the season parameter
+        })
         .then((response) => {
           setProducts(response.data);
           setDisplayedProducts(response.data);
@@ -75,15 +77,17 @@ const MainPage = () => {
           setLoadingProducts(false);
         });
     }
-  }, [userId]); // Runs when userId updates
+  }, [userId, season]); // Runs when userId updates
 
   // Fetch seasonal recommendations only if login check is complete and user is NOT logged in
   useEffect(() => {
     if (loginChecked && !userId) {
       setLoadingProducts(true);
       axios
-        .get(`http://127.0.0.1:5000/season-recommendations?season=${season}`, {
-        })
+        .get(
+          `http://127.0.0.1:5000/season-recommendations?season=${season}`,
+          {}
+        )
         .then((response) => {
           setProducts(response.data);
           setDisplayedProducts(response.data);
@@ -126,7 +130,7 @@ const MainPage = () => {
     setLoadMore(true);
     axios
       .get("http://127.0.0.1:5000/user-recommendations", {
-        params: { num_recommendations: 4, offset: index }, // Include an offset
+        params: { num_recommendations: 4, offset: index, season: season }, // Include an offset
       })
       .then((response) => {
         const newProducts = response.data;
@@ -193,6 +197,20 @@ const MainPage = () => {
       });
   };
 
+  // Mapping of categories to image URLs
+  const categoryImages = {
+    Electronics: "https://rb.gy/6stoqt",
+    Clothing: "https://rb.gy/jdswd0",
+    "Home Decor": "https://rb.gy/e29hbt",
+    Books: "https://rb.gy/01h915",
+    Beauty: "https://rb.gy/av5pr9",
+    "Home & Kitchen": "https://shorturl.at/tNMc3",
+    "Sports & Outdoors": "https://shorturl.at/aPQLf",
+    Groceries: "https://shorturl.at/ybvbF",
+    "Toys & Games": "https://shorturl.at/navE9",
+    Fashion: "https://shorturl.at/pwWtG",
+    Automotive: "https://tinyurl.com/49vy7y73",
+  };
   return (
     <Box
       sx={{
@@ -205,11 +223,12 @@ const MainPage = () => {
     >
       {/* Header */}
       <AppBar
-        position="sticky"
+        position="fixed"
         sx={{
           background: "linear-gradient(45deg, #3f51b5, #5c6bc0)",
           boxShadow: "0 4px 12px rgba(0, 0, 0, 0.2)",
           padding: "0.5rem 0",
+          zIndex: 1200,
         }}
       >
         <Toolbar>
@@ -357,7 +376,11 @@ const MainPage = () => {
             <CircularProgress sx={{ color: "#3f51b5" }} />
           </Box>
         ) : (
-          <Grid container spacing={2} sx={{ width: "100%", margin: "0 auto" }}>
+          <Grid
+            container
+            spacing={2}
+            sx={{ width: "100%", margin: "0 auto", paddingTop: 10 }}
+          >
             {displayedProducts.map((product) => (
               <Grid
                 size={{ xs: 12, sm: 6, md: 4, lg: 3 }}
@@ -366,32 +389,87 @@ const MainPage = () => {
                 <Card
                   sx={{
                     width: "100%",
-                    maxWidth: "300px", // Limit card width
+                    maxWidth: "310px", // Limit card width
                     margin: "0 auto", // Center cards
                     borderRadius: "12px",
                     boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)",
+                    height: "210px",
+                    transition: "box-shadow 0.3s ease-in-out",
+                    "&:hover": {
+                      boxShadow: "0 0 10px rgba(0, 0, 0, 0.3)", // Darker edges on hover
+                      "& .product-id": {
+                        color: "blue", // Product ID turns blue on hover
+                      },
+                    },
                   }}
                 >
-                  <CardContent>
-                    <Typography variant="h5" sx={{ fontWeight: "bold" }}>
-                      {product.ProductID}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Category: {product.Category}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Brand: {product.Brand}
-                    </Typography>
-                    <Typography variant="body1" sx={{ color: "#e74c3c" }}>
-                      Price: ₹{product["Price (INR)"]}
-                    </Typography>
-                    <Button
-                      variant="contained"
-                      sx={{ mt: 2, borderRadius: "20px" }}
-                      onClick={() => setSelectedProduct(product)}
-                    >
-                      View Details
-                    </Button>
+                  <CardContent sx={{ display: "flex", alignItems: "center" }}>
+                    <Box sx={{ flexGrow: 1 }}>
+                      <Typography
+                        gutterBottom
+                        variant="h5"
+                        sx={{ fontWeight: "bold" }}
+                        className="product-id"
+                      >
+                        {product.ProductID}
+                      </Typography>
+                      <Chip
+                        label={product.Category}
+                        sx={{
+                          mb: 1,
+                          backgroundColor: "yellow",
+                          color: "green",
+                          fontWeight: "bold",
+                          "& .MuiChip-label": { color: "green" }, // Ensures the text color is applied properly
+                        }}
+                      />
+                      <Typography
+                        variant="body2"
+                        sx={{ fontSize: "15px", color: "text.secondary" }}
+                      >
+                        Brand: {product.Brand}
+                      </Typography>
+                      <Typography
+                        variant="h6"
+                        sx={{ color: "#e74c3c", fontWeight: "bold" }}
+                      >
+                        Price: ₹{product["Price (INR)"]}
+                      </Typography>
+                      <Button
+                        variant="contained"
+                        sx={{
+                          mt: 2,
+                          borderRadius: "20px",
+                          background:
+                            "linear-gradient(45deg, #3498db, #8e44ad)",
+                          color: "#fff",
+                          "&:hover": {
+                            background:
+                              "linear-gradient(45deg, #2980b9, #6c3483)",
+                          },
+                        }}
+                        onClick={() => setSelectedProduct(product)}
+                      >
+                        View Details
+                      </Button>
+                    </Box>
+                    <Box sx={{ width: 100, height: 170, marginLeft: 2 }}>
+                      <img
+                        src={
+                          categoryImages[product.Category] ||
+                          `https://dummyimage.com/200x140/cccccc/000000&text=${encodeURIComponent(
+                            rec.ProductID
+                          )}`
+                        }
+                        alt={product.ProductID}
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "cover",
+                          borderRadius: "8px",
+                        }}
+                      />
+                    </Box>
                   </CardContent>
                 </Card>
               </Grid>

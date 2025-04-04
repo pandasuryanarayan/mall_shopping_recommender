@@ -11,10 +11,26 @@ import {
   CardMedia,
   Button,
   Box,
+  Chip,
 } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import CloseIcon from "@mui/icons-material/Close";
 import axios from "axios";
+
+// Mapping of categories to image URLs
+const categoryImages = {
+  Electronics: "https://rb.gy/6stoqt",
+  Clothing: "https://rb.gy/jdswd0",
+  "Home Decor": "https://rb.gy/e29hbt",
+  Books: "https://rb.gy/01h915",
+  Beauty: "https://rb.gy/av5pr9",
+  "Home & Kitchen": "https://shorturl.at/tNMc3",
+  "Sports & Outdoors": "https://shorturl.at/aPQLf",
+  Groceries: "https://shorturl.at/ybvbF",
+  "Toys & Games": "https://shorturl.at/navE9",
+  Fashion: "https://shorturl.at/pwWtG",
+  Automotive: "https://tinyurl.com/49vy7y73",
+};
 
 const ProductDetailsDialog = ({ selectedProduct, onClose }) => {
   const [recommendations, setRecommendations] = useState([]);
@@ -34,7 +50,7 @@ const ProductDetailsDialog = ({ selectedProduct, onClose }) => {
       axios
         .get(
           `http://127.0.0.1:5000/recommend?product_id=${currentProduct.ProductID}`,
-          { timeout : 120000 }
+          { timeout: 120000 }
         )
         .then((response) => {
           // Filter out the current product and limit to 6 recommendations
@@ -169,13 +185,18 @@ const ProductDetailsDialog = ({ selectedProduct, onClose }) => {
                       sx={{
                         margin: "10px",
                         padding: "10px",
-                        transition: "transform 0.2s",
-                        "&:hover": { transform: "scale(1.02)" },
+                        transition: "box-shadow 0.3s ease-in-out",
+                        "&:hover": {
+                          boxShadow: "0 0 10px rgba(0, 0, 0, 0.3)", // Darker edges on hover
+                          "& .product-id": {
+                            color: "blue", // Product ID turns blue on hover
+                          },
+                        },
                         borderRadius: "12px",
                         boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)",
-                        cursor: "pointer",
                         display: "flex",
                         flexDirection: "row",
+                        height: "270px",
                       }}
                     >
                       <CardMedia
@@ -183,23 +204,42 @@ const ProductDetailsDialog = ({ selectedProduct, onClose }) => {
                         sx={{
                           width: "40%",
                           objectFit: "cover",
+                          borderRadius: "10px",
                         }}
-                        image={`https://dummyimage.com/200x140/cccccc/000000&text=${encodeURIComponent(
-                          rec.ProductID
-                        )}`}
+                        image={
+                          categoryImages[rec.Category] ||
+                          `https://dummyimage.com/200x140/cccccc/000000&text=${encodeURIComponent(
+                            rec.ProductID
+                          )}`
+                        }
                         alt={rec.ProductID}
                       />
                       <CardContent sx={{ width: "60%" }}>
-                        <Typography gutterBottom variant="h6">
+                        <Typography
+                          gutterBottom
+                          variant="h5"
+                          sx={{ fontWeight: "bold" }}
+                          className="product-id"
+                        >
                           {rec.ProductID}
                         </Typography>
-                        <Typography variant="body2">
-                          Category: {rec.Category}
-                        </Typography>
+                        <Chip
+                          label={rec.Category}
+                          sx={{
+                            mb: 1,
+                            backgroundColor: "yellow",
+                            color: "blue",
+                            fontWeight: "bold",
+                            "& .MuiChip-label": { color: "blue" }, // Ensures the text color is applied properly
+                          }}
+                        />
                         <Typography variant="body2">
                           Brand: {rec.Brand}
                         </Typography>
-                        <Typography variant="body2">
+                        <Typography
+                          variant="h6"
+                          sx={{ color: "#e74c3c", fontWeight: "bold" }}
+                        >
                           Price: ₹{rec["Price (INR)"]}
                         </Typography>
                         <Button
@@ -208,8 +248,13 @@ const ProductDetailsDialog = ({ selectedProduct, onClose }) => {
                           sx={{
                             mt: 1,
                             borderRadius: "20px",
-                            backgroundColor: "#3f51b5",
-                            "&:hover": { backgroundColor: "#5c6bc0" },
+                            background:
+                              "linear-gradient(45deg, #3498db, #8e44ad)",
+                            color: "#fff",
+                            "&:hover": {
+                              background:
+                                "linear-gradient(45deg, #2980b9, #6c3483)",
+                            },
                           }}
                           onClick={() => handleRecommendationClick(rec)}
                         >
